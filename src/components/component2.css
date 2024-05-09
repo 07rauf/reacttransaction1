@@ -1,0 +1,45 @@
+.component2 {
+    border: 1px solid #007bff;
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 5px;
+    
+}
+  .form {
+    text-align: center;
+    box-shadow: 0 0 10px black; 
+  }
+  .form input {
+    font-weight: 900;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .closebutton {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .addbuttonn {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: forestgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   .form button:hover {
+    background-color: #0056b3;
+  }
+  

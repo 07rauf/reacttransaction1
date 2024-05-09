@@ -1,0 +1,132 @@
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .addbutton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .addbutton:hover {
+    background-color: #0056b3;
+  }
+  
+  .flex {
+    box-shadow: 0 0 10px black; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(157, 157, 157);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+.flex p {
+  font-size: 21px;
+    margin: 0;
+    margin-left: 40px;
+  }
+  
+  .deletebutton{
+    position: relative;
+    width: 50px;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid rgb(231, 50, 50);
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px #333;
+    overflow: hidden;
+    transition: .3s;
+  }
+  .deletebutton:hover {
+    background-color: rgb(245, 207, 207);
+    transform: scale(1.2);
+    box-shadow: 0 0 4px #111;
+    transition: .3s;
+}
+svg {
+  color: rgb(231, 50, 50);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+}
+.deletebutton:focus svg {
+  opacity: 0;
+  transition: .3s;
+}
+span {
+  width: 150px;
+  position: absolute;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  color: rgb(231, 50, 50);
+  font-weight: 600;
+  transition: .3s;
+}
+.deletebutton:focus {
+  width: 150px;
+  height: 50px;
+  transition: .3s;
+}
+.deletebutton:focus span {
+  opacity: 1;
+  transition: .3s;
+}
+
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  margin-left: 37.9%;
+  width: 300px;
+  font-size: 29px; 
+  color: #333;
+  text-align: center; 
+  padding: 20px; 
+  border-radius: 10px; 
+  animation: move 2s infinite; 
+  box-shadow: 0 0 10px black; 
+}
+
+.addbutton{
+  background-color: blue;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 21px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.addbutton:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
