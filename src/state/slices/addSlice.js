@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   from: '',
   to: '',
-  amount: ''
+  amount: '', 
 };
 
 export const addSlice = createSlice({

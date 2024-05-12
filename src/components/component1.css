@@ -1,0 +1,22 @@
+.component1 {
+    border: 1px solid #007bff;
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 5px;
+    
+}
+  .form1 {
+    text-align: center;
+    box-shadow: 0 0 10px black; 
+    position: relative;
+    left: 45%;
+    border-radius: 10px;
+  }
+  .form1 input {
+    font-weight: 900;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }

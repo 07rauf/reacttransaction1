@@ -5,11 +5,13 @@ import './component2.css';
 
 const Component2 = ({ Closed }) => {
   const dispatch = useDispatch();
-  const [dataforvalue, setDataforvalue] = useState( );
+  const [dataforvalue, setDataforvalue] = useState({ from: '', to: '', amount: '' });
+
   const newApis = (e) => {
     setDataforvalue({ 
       ...dataforvalue,
-       [e.target.name]: e.target.value });
+      [e.target.name]: e.target.value 
+    });
   };
 
   const addToApi = () => {
@@ -17,12 +19,13 @@ const Component2 = ({ Closed }) => {
     dispatch(To(dataforvalue.to));
     dispatch(Amount(dataforvalue.amount));
   };
+
   return (
     <div className='component2'>
       <div className="form">
         <input name="to" type="text" placeholder="FROM" onChange={newApis} /><br />
         <input name="from" type="text" placeholder="TO" onChange={newApis} /><br />
-        <input name="amount" type="text" placeholder="Amount" onChange={newApis} /><br />
+        <input name="amount" type="text" placeholder="AMOUNT" onChange={newApis} /><br />
         <button type="button" className="addbuttonn" onClick={addToApi}>
           Add Api
         </button>
